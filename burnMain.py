@@ -187,6 +187,7 @@ class burnDown(QMainWindow):
         
         self.df.plot(y='Estimate', label='Estimate', legend=False, ax=ax)
         self.df.plot(y='To_do', label='To do', legend=False, ax=ax)
+        ax.axvline(x=delta, color='red', linestyle='--', label='Today')
 
         # for tick in ax.get_xticklabels():
         #     tick.set_rotation(90)
